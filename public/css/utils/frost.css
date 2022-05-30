@@ -185,7 +185,7 @@ This is an ongoing project and many more features will be added in the future.
     Provide a general class for displaying vertical content on a page by providing some left and right
     margin on the sides. This margin will be removed when the screen is < 600px wide
 */
-.vertical-view-auto {
+.vertical-view {
     margin: 0 10%;
 }
 
@@ -319,8 +319,46 @@ This is an ongoing project and many more features will be added in the future.
 .pd-10-bottom, .pd-10, .pd-10-all > *, .pd-10-bottom-all > *    { padding-bottom:   calc(var(--paddingIncrement)*10); }
 /* padding utility classes end */
 
+
+/* x-small screens screens */
+@media screen and (max-width: 500px) {
+
+}
+
+
+/* small screens */
 @media screen and (max-width: 700px) {
-    .vertical-view-auto {
+
+    /* EXPERIMENTAL BEGINS */
+    .vertical-view.fit-small-screen {
+        margin: 0;
+    }
+
+    .fill-three-quarters.fit-small-screen {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fill-three-quarters-wide.fit-small-screen {
+        width: 100%;
+    }
+
+    .fill-three-quarters-tall.fit-small-screen {
+        height: 100%;
+    }
+    /* EXPERIMENTAL ENDS */
+}
+
+/* medium screens */
+@media screen and (max-width: 1200px) {
+    .vertical-view.fit-medium-screen {
+        margin: 0;
+    }
+}
+
+/* large screens */
+@media screen and (max-width: 1920px) {
+    .vertical-view.fit-large-screen {
         margin: 0;
     }
 }
