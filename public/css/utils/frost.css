@@ -1,0 +1,215 @@
+/*
+=========================
+| FROST (CSS FRAMEWORK) |
+==================================================================================================================================
+
+? @author:              William J. Horn
+? @doc-name:            frost.js
+? @doc-created:         05/29/2022
+? @doc-modified:        05/29/2022
+
+==================================================================================================================================
+
+? @doc-info
+==================
+| ABOUT DOCUMENT |
+==================================================================================================================================
+
+*****************
+***** FROST *****
+*****************
+
+Frost is a lightweight CSS framework created by William J. Horn with the attempt of making layman-use of CSS much easier
+and cleaner. It's main features are: 
+
+    * Quick margin/padding classes
+    * Easy interaction with flex box
+    * Responsiveness with media query classes
+
+This is an ongoing project and many more features will be added in the future.
+
+==================================================================================================================================
+
+? @doc-todo
+=================
+| DOCUMENT TODO |
+==================================================================================================================================
+==================================================================================================================================
+*/
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+/*
+    * utility: 'fill'
+    The element will fill it's parent container with a given percentage. Using '.fill' by itself
+    will make the element fill it's container with 100% width and height.
+
+    descendants:
+        .fill-wide
+        .fill-tall
+        .fill-half-wide
+        .fill-half-tall
+        .fill-n-wide
+        .fill-n-tall
+        ...
+
+*/
+.fill-wide, .fill {
+    width: 100%;
+}
+
+.fill-tall, .fill {
+    height: 100%;
+}
+
+.fill-half-wide, .fill-half {
+    width: 50%;
+}
+
+.fill-half-tall, .fill-half {
+    height: 50%;
+}
+
+.fill-third-wide, .fill-third {
+    width: 33.33333%;
+}
+
+.fill-third-tall, .fill-third {
+    height: 33.33333%;
+}
+
+.fill-fourth-wide, .fill-fourth {
+    width: 25%;
+}
+
+.fill-fourth-tall, .fill-fourth {
+    height: 25%;
+}
+
+/*
+    * utility: 'vertical-view-auto'
+    Provide a general class for displaying vertical content on a page by providing some left and right
+    margin on the sides. This margin will be removed when the screen is < 600px wide
+*/
+.vertical-view-auto {
+    margin: 0 10%;
+}
+
+/*
+    * utility: 'mg-n'
+    General purpose margin
+
+    descendants:
+        mg-left-n
+        mg-right-n
+        mg-top-n
+        mg-bottom-n
+*/
+/* margin utility classes begin */
+.mg-left-5, .mg-5        { margin-left:     5px; }
+.mg-right-5, .mg-5       { margin-right:    5px; }
+.mg-top-5, .mg-5         { margin-top:      5px; }
+.mg-bottom-5, .mg-5      { margin-bottom:   5px; }
+
+.mg-left-10, .mg-10      { margin-left:     10px; }
+.mg-right-10, .mg-10     { margin-right:    10px; }
+.mg-top-10, .mg-10       { margin-top:      10px; }
+.mg-bottom-10, .mg-10    { margin-bottom:   10px; }
+
+.mg-left-15, .mg-15      { margin-left:     15px; }
+.mg-right-15, .mg-15     { margin-right:    15px; }
+.mg-top-15, .mg-15       { margin-top:      15px; }
+.mg-bottom-15, .mg-15    { margin-bottom:   15px; }
+
+.mg-left-20, .mg-20      { margin-left:     20px; }
+.mg-right-20, .mg-20     { margin-right:    20px; }
+.mg-top-20, .mg-20       { margin-top:      20px; }
+.mg-bottom-20, .mg-20    { margin-bottom:   20px; }
+
+.mg-left-25, .mg-25      { margin-left:     25px; }
+.mg-right-25, .mg-25     { margin-right:    25px; }
+.mg-top-25, .mg-25       { margin-top:      25px; }
+.mg-bottom-25, .mg-25    { margin-bottom:   25px; }
+
+.mg-left-30, .mg-30      { margin-left:     30px; }
+.mg-right-30, .mg-30     { margin-right:    30px; }
+.mg-top-30, .mg-30       { margin-top:      30px; }
+.mg-bottom-30, .mg-30    { margin-bottom:   30px; }
+
+.mg-left-40, .mg-40      { margin-left:     40px; }
+.mg-right-40, .mg-40     { margin-right:    40px; }
+.mg-top-40, .mg-40       { margin-top:      40px; }
+.mg-bottom-40, .mg-40    { margin-bottom:   40px; }
+
+.mg-left-50, .mg-50      { margin-left:     50px; }
+.mg-right-50, .mg-50     { margin-right:    50px; }
+.mg-top-50, .mg-50       { margin-top:      50px; }
+.mg-bottom-50, .mg-50    { margin-bottom:   50px; }
+/* margin utility classes end */
+
+
+/*
+    * utility: 'pd-n'
+    General purpose padding
+
+    descendants:
+        pd-left-n
+        pd-right-n
+        pd-top-n
+        pd-bottom-n
+*/
+/* padding utility classes begin */
+.pd-left-5, .pd-5        { padding-left:     5px; }
+.pd-right-5, .pd-5       { padding-right:    5px; }
+.pd-top-5, .pd-5         { padding-top:      5px; }
+.pd-bottom-5, .pd-5      { padding-bottom:   5px; }
+
+.pd-left-10, .pd-10      { padding-left:     10px; }
+.pd-right-10, .pd-10     { padding-right:    10px; }
+.pd-top-10, .pd-10       { padding-top:      10px; }
+.pd-bottom-10, .pd-10    { padding-bottom:   10px; }
+
+.pd-left-15, .pd-15      { padding-left:     15px; }
+.pd-right-15, .pd-15     { padding-right:    15px; }
+.pd-top-15, .pd-15       { padding-top:      15px; }
+.pd-bottom-15, .pd-15    { padding-bottom:   15px; }
+
+.pd-left-20, .pd-20      { padding-left:     20px; }
+.pd-right-20, .pd-20     { padding-right:    20px; }
+.pd-top-20, .pd-20       { padding-top:      20px; }
+.pd-bottom-20, .pd-20    { padding-bottom:   20px; }
+
+.pd-left-25, .pd-25      { padding-left:     25px; }
+.pd-right-25, .pd-25     { padding-right:    25px; }
+.pd-top-25, .pd-25       { padding-top:      25px; }
+.pd-bottom-25, .pd-25    { padding-bottom:   25px; }
+
+.pd-left-30, .pd-30      { padding-left:     30px; }
+.pd-right-30, .pd-30     { padding-right:    30px; }
+.pd-top-30, .pd-30       { padding-top:      30px; }
+.pd-bottom-30, .pd-30    { padding-bottom:   30px; }
+
+.pd-left-40, .pd-40      { padding-left:     40px; }
+.pd-right-40, .pd-40     { padding-right:    40px; }
+.pd-top-40, .pd-40       { padding-top:      40px; }
+.pd-bottom-40, .pd-40    { padding-bottom:   40px; }
+
+.pd-left-50, .pd-50      { padding-left:     50px; }
+.pd-right-50, .pd-50     { padding-right:    50px; }
+.pd-top-50, .pd-50       { padding-top:      50px; }
+.pd-bottom-50, .pd-50    { padding-bottom:   50px; }
+/* padding utility classes end */
+
+@media screen and (max-width: 600px) {
+    .vertical-view-auto {
+        margin: 0;
+    }
+}

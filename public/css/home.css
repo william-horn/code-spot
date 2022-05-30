@@ -1,0 +1,30 @@
+
+/* ------- */
+/* Globals */
+/* ------- */
+
+/* generic header styling */
+header {
+    padding: 10px 0;
+    background-color: red; /* !temporary color */
+}
+
+/* all nav bar styling -- there should only be one nav bar */
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: black; /* !temporary color */
+    top: 0;
+    padding: 10px 20px;
+}
+
+nav div > a {
+    padding: 10px;
+    margin: 5px;
+    background-color: blue; /* !temporary color */
+}
+
+/* --------- */
+/* Utilities */
+/* --------- */
+
